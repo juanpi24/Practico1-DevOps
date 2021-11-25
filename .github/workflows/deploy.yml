@@ -2,7 +2,7 @@ name: CD
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   deploy:
@@ -12,5 +12,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.3.6 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "nbissogha" #Must be unique in Heroku
-          heroku_email: "nicolasbisso7.1@gmail.com"
+          heroku_app_name: "devopsunlar" #Must be unique in Heroku
+          heroku_email: "juan22milli@gmail.com"
